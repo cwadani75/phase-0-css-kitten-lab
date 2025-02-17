@@ -1,0 +1,46 @@
+/* 1) Selects the image with a class of kitty-1 */
+.kitty-1 {
+    position: absolute;
+    z-index: 1;
+    top: 276px;
+    left: 129px;
+}
+
+
+/* 2) Selects the image with an ID of kitty-2 */
+#kitty-2 {
+    position: absolute;
+    z-index: 2;
+    top: 212px;
+    left: 369px;
+}
+
+
+/* 3) Selects the image inside the element with an ID of basket (descendant selector) */
+#basket img {
+    position: absolute;
+    z-index: 5;
+    top: 291px;
+    left: 319px;
+    display: block;
+}
+
+
+
+/* 4) Selects the image based on its sibling element */
+#ball + img {
+    position: absolute;
+    z-index: 4;
+    top: 260px;
+    left: 455px;
+    display: block;
+}
+
+
+/* 5) Selects the image that has an alt attribute value matching "Kitty 5" (attribute selector) */
+img[alt='Kitty 5'] {
+    position: absolute;
+    z-index: 3;
+    top: 217px;
+    left: 223px;
+}
